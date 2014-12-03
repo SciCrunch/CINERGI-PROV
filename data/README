@@ -1,0 +1,19 @@
+We provide sample data, which we envision will be made available from different CINERGI modules. 
+In particular, we identify five use cases of data generation from CINERGI modules. 
+
+
+C1: An activity consumes an entity and produces an entity. In this use case, either the input or the output entity can be optional, but one entity must be present. 
+C2: An activity consumes an entitiy and produces two entities. The process by which the two entities are produced, is assumed to be a black-box. 
+C3: An activity consumes two entities and produces a combined entity. The combined entity is a merge of the two entities. 
+C4: An activity consumes an entity and produces a new version of the consumed entity. 
+C5: An activiy invalidates an entity, such as deletes it. 
+
+We have written these case statements as PROV-JSON documents. 
+
+The file name structure will describe the case it encodes
+CY-fileX.json
+
+where X represents the id of the file and CY represents the case number. 
+ 
+
+
