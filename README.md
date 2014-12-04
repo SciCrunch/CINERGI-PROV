@@ -1,4 +1,4 @@
 CINERGI-PROV
 ============
 
-Data from CINERGI pipeline and clients to connect to the server
+Simulated data from CINERGI pipeline and python clients to connect to the PROVaaS server
