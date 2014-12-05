@@ -1,5 +1,5 @@
 
-The current host of the service is http://geoprovdb.webfactional.com/
+The current host of the service is http://geoprovdb.webfactional.com/provdb
 
 
 post_client.py: python post_client.py [filename]
