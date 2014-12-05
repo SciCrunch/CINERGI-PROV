@@ -1,10 +1,10 @@
-post_client.py: python post_client.py &ltfilename&gt
+post_client.py: python post_client.py [filename]
 
 &nbsp;&nbsp;&nbsp; POST /gprov/api/v2.0/provenance/resource/	
 
 &nbsp;&nbsp;&nbsp; Post PROV-DM compliant provenance of a ‘uuid’ labeled resource/entity.
 
-q1_client.py: python q1_client.py -u <uuid>
+q1_client.py: python q1_client.py -u [uuid]
 &nbsp;&nbsp;&nbsp; GET /gprov/api/v2.0/provenance/b/resource/:id	
 &nbsp;&nbsp;&nbsp; Retrieve PROV-DM compliant backward provenance about the resource with the given ‘uuid’.	
 
