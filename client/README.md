@@ -1,5 +1,5 @@
 post_client.py: python post_client.py [filename]
-<br>&nbsp;&nbsp;&nbsp; POST /gprov/api/v2.0/provenance/resource/	
+<br>&nbsp;&nbsp;&nbsp; POST /gprov/api/v2.0/provenance/resource/
 <br>&nbsp;&nbsp;&nbsp; Post PROV-DM compliant provenance of a ‘uuid’ labeled resource/entity.
 
 
