@@ -4,18 +4,18 @@ from optparse import OptionParser
 import sys, json, os
 import subprocess
 
-
 host = os.environ.get('PROV_HOST')
 if (host == None):
    host = 'http://geoprovdb.webfactional.com'
 
 parser = OptionParser()
-parser.add_option("-u","--uuid", help = "UUID of the resource")
-parser.add_option("-a","--activity", help ="Activity property such as name or activityid")
+parser.add_option("-n","--node")
 (options, args) = parser.parse_args()
 
 uuid = args[0]
-activity = args[1]
-str = 'curl -i ' + host + '/api/v2.0/provenance/b/resource/%(uuid)s/activity/%(activity)s' % {"uuid":uuid,"activity":activity}
+str = 'curl -i -X DELETE ' + host + '/api/v2.0/resource/%(uuid)s' % {"uuid":uuid}
 print str
 os.system(str)
+
+
+
