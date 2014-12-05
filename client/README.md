@@ -5,17 +5,16 @@ post_client.py: python post_client.py <filename>
 &nbsp;&nbsp;&nbsp; Post PROV-DM compliant provenance of a ‘uuid’ labeled resource/entity.
 
 q1_client.py: python q1_client.py -u <uuid>
-
 &nbsp;&nbsp;&nbsp; GET /gprov/api/v2.0/provenance/b/resource/:id	
-
 &nbsp;&nbsp;&nbsp; Retrieve PROV-DM compliant backward provenance about the resource with the given ‘uuid’.	
 
+
+delete_client.py: python delete_client.py -u <uuid> 
 
 &nbsp;&nbsp;&nbsp; DELETE /gprov/api/v2.0/resource/:id	
 
 &nbsp;&nbsp;&nbsp;  Delete a node and its relationships
 
-delete_client.py: python delete_client.py -u <uuid> 
 
 
 q2_client.py: python q2_client.py -u <uuid> -a <activity_property>
