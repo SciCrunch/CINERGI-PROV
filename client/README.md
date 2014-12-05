@@ -1,4 +1,4 @@
-post_client.py: python post_client.py <filename>
+post_client.py: python post_client.py &ltfilename&gt
 
 &nbsp;&nbsp;&nbsp; POST /gprov/api/v2.0/provenance/resource/	
 
