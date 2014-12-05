@@ -7,7 +7,7 @@ import subprocess
 
 host = os.environ.get('PROV_HOST')
 if (host == None):
-   host = 'http://geoprovdb.webfactional.com'
+   host = 'http://geoprovdb.webfactional.com/provdb'
 
 parser = OptionParser()
 parser.add_option("-d","--direction", help ="Direction of provenance [backword(b)|forward(f)]. Default is backword(b)")
@@ -23,6 +23,6 @@ activity = args[1]
 t1 = args[2]
 t2 = args[3]
 
-str = 'curl -i ' + host + '/api/v2.0/provenance/%(d)s/activity/%(a)s/from/%(t1)s/to/%(t2)s' % {"d":direction,"a":activity,"t1":t1,"t2",t2}
+str = 'curl -i ' + host + '/provenance/%(d)s/activity/%(a)s/from/%(t1)s/to/%(t2)s' % {"d":direction,"a":activity,"t1":t1,"t2",t2}
 print str
 os.system(str)
