@@ -42,7 +42,7 @@
         "type": "xsd:string"
       },
       "foundry:UUID": {
-        "$": "1234-4567-8987",
+        "$": "1234-4567-8986",
         "type": "xsd:string"
       },
       "foundry:creationTime": {
