@@ -10,10 +10,11 @@ if (host == None):
 
 parser = OptionParser()
 parser.add_option("-n","--node")
+parser.add_option("-n","--namespace")
 (options, args) = parser.parse_args()
 
 uuid = args[0]
-str = 'curl -i -X DELETE ' + host + '/resource/%(uuid)s' % {"uuid":uuid}
+str = 'curl -u tanu:cinergi -i -X DELETE ' + host + '/api/%(namespace)s' %{"namespace":namespace} + '/provenance/%(uuid)s' % {"uuid":uuid}
 print str
 os.system(str)
 
