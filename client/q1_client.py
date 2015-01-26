@@ -10,10 +10,13 @@ if (host == None):
    host = 'http://geoprovdb.webfactional.com/provdb'
 
 parser = OptionParser()
+parser.add_option("-n","--namespace")
 parser.add_option("-u","--uuid")
 (options, args) = parser.parse_args()
 
-uuid = args[0]
-str = 'curl -i ' + host + '/provenance/b/resource/%(uuid)s' % {"uuid":uuid}
+print len(args)
+namespace = options.namespace
+uuid = options.uuid
+str = 'curl -u tanu:cinergi -i ' + host + '/api/%(namespace)s' %{"namespace":namespace} + '/provenance/%(uuid)s' % {"uuid":uuid}
 print str
 os.system(str)

@@ -10,8 +10,8 @@ host = os.environ.get('PROV_HOST')
 if (host == None):
    host = 'http://geoprovdb.webfactional.com/provdb'
 
-str = 'curl -i -H "Content-Type: application/json" -X POST -d \'%(obj)s\' ' % {"obj":obj} + host + '/provenance/resource'
-print str
+str = 'curl -u tanu:cinergi -i -H "Content-Type: application/json" -X POST -d \'%(obj)s\' ' % {"obj":obj} + host + '/provenance/resource'
+#print str
 os.system(str)
 
 
