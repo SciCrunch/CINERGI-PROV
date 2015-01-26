@@ -16,11 +16,11 @@
       "foundry:batchId": {
         "$": "20141101",
         "type": "xsd:string"
-      }
+      },
       "foundry:label": {
         "$": "\"http://www.cinergi.org/doc1-001\"",
         "type": "xsd:string"
-      }
+      },
       "foundry:version":{	
 	"$": "1.0",
 	"type": "xsd:string"
@@ -42,11 +42,11 @@
       "foundry:batchId": {
         "$": "20141101",
         "type": "xsd:string"
-      }  
+      },  
       "foundry:label": {
         "$": "\"http://www.cinergi.org/doc1-002\"",
         "type": "xsd:string"
-      }
+      },
       "foundry:version": {
 	"$": "1.0",
 	"type": "xsd:string"
