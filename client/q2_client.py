@@ -7,7 +7,9 @@ import subprocess
 
 host = os.environ.get('PROV_HOST')
 if (host == None):
-   host = 'http://geoprovdb.webfactional.com/provdb'
+   print "Set PROV_HOST variable"
+   sys.exit()
+   #host = 'http://geoprovdb.webfactional.com/provdb'
 
 parser = OptionParser()
 parser.add_option("-u","--uuid", help = "UUID of the resource")

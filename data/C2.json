@@ -23,7 +23,7 @@
         "type": "xsd:string"
       },
       "foundry:UUID": {
-        "$": "1234-4567-8979",
+        "$": "1234-4567-8900",
         "type": "xsd:string"
       },
       "foundry:creationTime": {
@@ -33,7 +33,16 @@
       "foundry:batchId": {
         "$": "20141101",
         "type": "xsd:string"
+      },
+      "foundry:label": {
+        "$": "\"http://www.cinergi.org/doc4-001\"",
+        "type": "xsd:string"
+      },
+      "foundry:version":{	
+	"$": "1.0",
+	"type": "xsd:string"
       }
+
     },
     "foundry:en3": {
       "foundry:sourceId": {
@@ -51,7 +60,16 @@
       "foundry:batchId":{
         "$": "20141101",
         "type": "xsd:string"
+      },
+      "foundry:label": {
+        "$": "\"http://www.cinergi.org/doc5-001\"",
+        "type": "xsd:string"
+      },
+      "foundry:version":{	
+	"$": "1.0",
+	"type": "xsd:string"
       }
+
     },
 
     "foundry:en4": {
@@ -70,7 +88,16 @@
       "foundry:batchId": {
         "$": "20141101",
         "type": "xsd:string"
+      },
+      "foundry:label": {
+        "$": "\"http://www.cinergi.org/doc6-001\"",
+        "type": "xsd:string"
+      },
+      "foundry:version":{	
+	"$": "1.0",
+	"type": "xsd:string"
       }
+
     }
 
   },
