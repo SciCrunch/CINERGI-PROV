@@ -11,9 +11,9 @@ C5: An activiy invalidates an entity, such as deletes it.
 We have written these case statements as PROV-JSON documents. 
 
 The file name structure will describe the case it encodes
-CY-fileX.json
+CX.json
 
-where X represents the id of the file and CY represents the case number. 
+where X represents the case number. 
  
 
 

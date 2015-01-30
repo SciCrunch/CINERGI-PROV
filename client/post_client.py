@@ -12,7 +12,7 @@ if (host == None):
    sys.exit()
    #host = 'http://geoprovdb.webfactional.com/provdb'
 
-str = 'curl -u tanu:cinergi -i -H "Content-Type: application/json" -X POST -d \'%(obj)s\' ' % {"obj":obj} + host + '/api/provenance/'
+str = 'curl -u test:cinergi -i -H "Content-Type: application/json" -X POST -d \'%(obj)s\' ' % {"obj":obj} + host + '/api/provenance/'
 #print str
 os.system(str)
 

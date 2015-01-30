@@ -19,6 +19,6 @@ parser.add_option("-u","--uuid")
 print len(args)
 namespace = options.namespace
 uuid = options.uuid
-str = 'curl -u tanu:cinergi -i ' + host + '/api/%(namespace)s' %{"namespace":namespace} + '/provenance/%(uuid)s' % {"uuid":uuid}
+str = 'curl -u test:cinergi -i ' + host + '/api/%(namespace)s' %{"namespace":namespace} + '/provenance/%(uuid)s' % {"uuid":uuid}
 print str
 os.system(str)
